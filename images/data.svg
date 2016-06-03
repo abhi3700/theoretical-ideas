@@ -17,8 +17,8 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="data.svg"
    inkscape:export-filename="/home/smorante/Repositories/theoretical-ideas/images/data.png"
-   inkscape:export-xdpi="140.53206"
-   inkscape:export-ydpi="140.53206">
+   inkscape:export-xdpi="87.846947"
+   inkscape:export-ydpi="87.846947">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="307.02437"
+     inkscape:cx="185.95294"
      inkscape:cy="159.02419"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
