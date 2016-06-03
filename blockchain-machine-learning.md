@@ -27,7 +27,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
     In the figure example, we have data in a table. The data has several columns with features of the data. The same data is represented as gray dots on the bottom part of the figure. With this data, organized by an index *id*, a Merkle tree is calculated. Taking the root tree node, and including it in the blockchain assures us that the data cannot be modified.
     
     <center>
-        <img src="images/data.png" width="700">
+        <img src="images/data.png" width="650">
     </center>
 
 
