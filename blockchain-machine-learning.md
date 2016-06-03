@@ -27,7 +27,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
     In the figure example, we have data in a table. The data has several columns with features of the data. The same data is represented as gray dots on the bottom part of the figure. With this data, organized by an index *id*, a Merkle tree is calculated. Taking the root node of the tree, and including it in the blockchain assures us that the data cannot be modified.
     
     <center>
-        <img src="images/data.png" width="480">
+        <img src="images/data.png" width="800">
     </center>
 
 
@@ -38,7 +38,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
 
 
     <center>
-            <img src="images/mapreduce.png" width="480">
+            <img src="images/mapreduce.png" width="800">
     </center>
     
     Our approach to harden this paradigm against tampering is to wrap each process in a "bubble" that contains the process to be executed, and additional parameters, like a hash of the current process parameters (a current state hash) and a hash of the previous parameters of the preocess (a las state hash). Let us call this wrapper as the *bubble machine*. This bubble are in fact nodes of the blockchain system, so every exchange of information among the "bubbles" are in fact similar to transactions in Bitcoin (here renamed to *messages*).
@@ -46,7 +46,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
 
 
     <center>
-            <img src="images/bubble.png" width="480">
+            <img src="images/bubble.png" width="800">
     </center>
 
 
