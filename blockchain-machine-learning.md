@@ -36,7 +36,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
     
     
 
-* **Node**: every process in a distributed process scheme, would become a node. Every interaction among these nodes is refereed as a *message*. Let us focus on the distributed paradigm most used currently, namely "MapReduce". In this paradigm, a master cluster node acts as coordinator and deliver processes to worker cluster nodes. These workers read the data, perform their computation (the map part) and write the results in files. Another set of workers read the data and perform another computation that reduces the number of computation elements (the reduce part). Finally they write the results into the disk.
+* **Node**: every process in a distributed process scheme, would become a node. Every interaction among these nodes is refereed as a *message*. Let us focus on the distributed paradigm most used currently, namely "MapReduce". In this paradigm, a master cluster node acts as coordinator and deliver processes to worker cluster nodes. These workers read the data, perform their computation (the map part) and write the results in files. Another set of workers read the data and perform another computation that reduces the number of computation elements (the reduce part). Finally they write the results into the disk (figure inspired by Dean, J., & Ghemawat, S. (2008). MapReduce: simplified data processing on large clusters. Communications of the ACM, 51(1), 107-113.).
 
 
     <center>
@@ -50,20 +50,47 @@ In this proposal we are going to explore how a blockchain-like system could be a
     </center>
 
 
-    Let me show you an example of how a process becomes a node. 
+    The figure shows an example of how a process becomes a node. 
 
     <center>
             <img src="images/bubble.png" width="600">
     </center>    
 
+    The new node contains:
 
-* Message
+    * The **same processes** to be performed previously to its conversion
+    * A **public address**
+    * A **private key** (created with the public key)
+    * A **hash of the previous state** on the node the last operation on the node (e.g. performing a computation)
+    * A **hash of the state of the node after the computation** (e.g. node parameters updated). This hash includes in the computation the previous state hash. In case of an intentional modification, an attacker would have to recalculate all the states' hashes since the instant of the modification until the present. This hash is broadcasted to the network after each change
+    * A **hash of the data read** from the disk in order to perform its computation (e.g. training data)
+    * A **hash of the data written** after the computation (e.g. transformed data after a Map computation)
 
-* Blockchain
+* **Message**: a message contains the information passed through the network. It may contain data in any form. Without the blockchain system, worker nodes, selected by the master node, wrote and read from the same disk space. With the blockchain system, the master node must designate which node will send data to other node, so this communication can be signed by the sender node using its private key. 
+  
+    Aside from data, a message must include the address of the node to which send the information, and a signature over a hash of the data proving the information sent is correct (just as Bitcoin does). Each message is broadcasted to the network
+
+
+* **Blockchain**: Each block in the blockchain should include:
+    * Previous block hash
+    * Hash state of every node
+    * Every message sent in its chunk of time
+    * Timestamp
+    
+    As in the case of Bitcoin, periodically, a new block is added to the blockchain. This addition must be verified by other computer (called miners in Bitcoin) by solving a computational challenge. When there is a consensus (51% of computational power) in the solution, the block is added. 
+    
+    Unlike Bitcoin, in this case, miners does not have an economical incentive to compute the solution. As this scheme is though to be implemented by systems worried by the security of its algorithms, I believed the sole motivation of keeping the models secured could be enough.
+    
+    
+    
+    
+    
+    
 
 
 
-### MapReduce Paradigm Computations
+
+
 
 
 
