@@ -27,7 +27,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
     In the figure example, we have data in a table. The data has several columns with features of the data. The same data is represented as gray dots on the bottom part of the figure. With this data, organized by an index *id*, a Merkle tree is calculated. Taking the root node of the tree, and including it in the blockchain assures us that the data cannot be modified.
     
     <center>
-        ![alt text](images/data.svg "Merkle tree of training data")
+        ![data](images/data.png)
         Merkle tree of training data
     </center>
 
@@ -38,7 +38,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
 
 
     <center>
-        ![alt text](images/mapreduce.svg "MapReduce concept")
+        ![mapreduce](images/mapreduce.png)
         MapReduce concept
     </center>
     
@@ -47,7 +47,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
 
 
     <center>
-        ![alt text](images/bubble.svg "The bubble machine wraps the processes")
+        ![bubble](images/bubble.png "The bubble machine wraps the processes")
         The bubble machine wraps the processes
     </center>
 

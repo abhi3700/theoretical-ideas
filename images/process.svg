@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="bubble.svg">
+   sodipodi:docname="process.svg"
+   inkscape:export-filename="/home/smorante/Repositories/theoretical-ideas/images/process.png"
+   inkscape:export-xdpi="26.388479"
+   inkscape:export-ydpi="26.388479">
   <defs
      id="defs4">
     <marker
@@ -192,9 +195,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="188.651"
-     inkscape:cy="165.3386"
+     inkscape:zoom="1.4"
+     inkscape:cx="133.00435"
+     inkscape:cy="34.369972"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -364,24 +367,6 @@
          x="363.98834"
          id="tspan4171-6"
          sodipodi:role="line">worker</tspan></text>
-    <ellipse
-       ry="20.708128"
-       rx="34.850262"
-       cy="479.94467"
-       cx="409.21295"
-       id="ellipse4173-5"
-       style="fill:#ffffff;stroke:#b0b0b0;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text4175-3"
-       y="482.38565"
-       x="381.80237"
-       style="font-style:normal;font-weight:normal;font-size:13.69621849px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="482.38565"
-         x="381.80237"
-         id="tspan4177-0"
-         sodipodi:role="line">process</tspan></text>
     <rect
        style="fill:#ffffff;stroke:#b0b0b0;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4637"
@@ -614,5 +599,99 @@
          y="482.39651"
          x="221.30678"
          sodipodi:role="line">machine</tspan></text>
+    <rect
+       y="729.89447"
+       x="-14.365476"
+       height="80.788712"
+       width="145.93214"
+       id="rect4165-2-8"
+       style="fill:#ffffff;stroke:#b0b0b0;stroke-width:0.97903514;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:#ffffff;stroke:#b0b0b0;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4167-7-5"
+       width="64.955322"
+       height="20.669617"
+       x="-14.689801"
+       y="729.57007" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4169-6-7"
+       y="743.65289"
+       x="-9.3007021"
+       style="font-style:normal;font-weight:normal;font-size:14.54797935px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="743.65289"
+         x="-9.3007021"
+         id="tspan4171-6-5"
+         sodipodi:role="line">process</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.62009907px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#888888;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="0.32459462"
+       y="762.91736"
+       id="text4741-3-0-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="0.32459462"
+         y="762.91736"
+         id="tspan4344">sum(split1[:,1])</tspan><tspan
+         sodipodi:role="line"
+         x="0.32459462"
+         y="773.6925"
+         id="tspan4375" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4346"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4348"><rect
+           id="rect4350"
+           width="199.50513"
+           height="122.73354"
+           x="-69.700523"
+           y="295.85336" /></flowRegion><flowPara
+         id="flowPara4352" /></flowRoot>    <rect
+       style="fill:#ffffff;stroke:#b0b0b0;stroke-width:0.97903514;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4354"
+       width="145.93214"
+       height="80.788712"
+       x="166.45183"
+       y="729.89447" />
+    <rect
+       y="729.57007"
+       x="166.1275"
+       height="20.669617"
+       width="64.955322"
+       id="rect4356"
+       style="fill:#ffffff;stroke:#b0b0b0;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.54797935px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="171.5166"
+       y="743.65289"
+       id="text4358"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4360"
+         x="171.5166"
+         y="743.65289">process</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4362"
+       y="762.91736"
+       x="181.14191"
+       style="font-style:normal;font-weight:normal;font-size:8.62009907px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#888888;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4364"
+         y="762.91736"
+         x="181.14191"
+         sodipodi:role="line">w[0] = 0</tspan><tspan
+         id="tspan4366"
+         y="773.6925"
+         x="181.14191"
+         sodipodi:role="line">w[1] = 0</tspan><tspan
+         id="tspan4368"
+         y="784.46759"
+         x="181.14191"
+         sodipodi:role="line">def update()</tspan></text>
   </g>
 </svg>
