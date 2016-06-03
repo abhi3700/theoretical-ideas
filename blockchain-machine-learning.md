@@ -1,4 +1,3 @@
-#[WORK IN PROGRESS]
 # Blockchain-like Machine Learning
 This proposal aims to build a theoretical structure to harden machine learning algorithms against tampering by means of a blockchain-like system.
 
@@ -82,7 +81,18 @@ In this proposal we are going to explore how a blockchain-like system could be a
     Unlike Bitcoin, in this case, miners does not have an economical incentive to compute the solution. As this scheme is though to be implemented by systems worried by the security of its algorithms, I believed the sole motivation of keeping the models secured could be enough.
     
     
-    
+### Uses
+
+This scheme presented can be applied to all the steps of processing of a machine learning algorithm:
+
+* **Training**: messages and nodes' states preserve the process of training from data and updating the model parameters.
+* **Test**: once the model is trained, the blockchain continues working, as every prediction is equivalent to a fed of information to the nodes, a computation, and an output result. These processes becomes part of the blockchain also
+
+A higher view of the scheme proposed gives us an intuition that the same scheme can be applied to any distributed process, whether a machine learning one or not. It may be interesting to apply this scheme to e.g. RAID systems, parallel processing etc.
+
+
+
+
     
     
     
