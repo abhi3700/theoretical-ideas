@@ -19,8 +19,32 @@ In this proposal we are going to explore how a blockchain-like system could be a
 ## High-level View
 
 
+### System Elements
+
+  
+* **Data**: machine learning algorithms work with data. An attacker could modified the algorithm's model during the training, by modifiying the data. This would results in a distorted model. To avoid this, data to be fed to a model is prevented from tampering by creating a **Merkle tree** of the data.
+
+    In the figure example, we have data in a table. The data has several columns with features of the data. The same data is represented as gray dots on the bottom part of the figure. With this data, organized by an index *id*, a Merkle tree is calculated. Taking the root node of the tree, and including it in the blockchain assures us that the data cannot be modified.
+    
+    <center>
+        ![alt text](images/data.svg "Merkle tree of training data")
+        Merkle tree of training data
+    </center>
+
+
+    The size of the tree is aproximately  log<sub>2</sub>(n) being *n* the number of rows on the table (the number of examples). it is important to notice that data does not hace to be in the blockchain, only its root node hash.
+
+* **Node**: every process in a distributed process scheme, would become a node. Every interaction among these nodes is refered as a *message*. Let us focus on the distributed paradigm for machine learning most used currently, "MapReduce".
+
+   
+
+* Message
+
+* Blockchain
+
+
+
 ### MapReduce Paradigm Computations
 
-## System Elements
 
 
