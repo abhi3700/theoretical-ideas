@@ -22,35 +22,35 @@ In this proposal we are going to explore how a blockchain-like system could be a
 ### System Elements
 
   
-* **Data**: machine learning algorithms work with data. An attacker could modified the algorithm's model during the training, by modifiying the data. This would results in a distorted model. To avoid this, data to be fed to a model is prevented from tampering by creating a **Merkle tree** of the data.
+* **Data**: machine learning algorithms work with data. An attacker could modified the algorithm's model during the training, by modifying the data. This would results in a distorted model. To avoid this, data to be fed to a model is prevented from tampering by creating a **Merkle tree** of the data.
 
-    In the figure example, we have data in a table. The data has several columns with features of the data. The same data is represented as gray dots on the bottom part of the figure. With this data, organized by an index *id*, a Merkle tree is calculated. Taking the root node of the tree, and including it in the blockchain assures us that the data cannot be modified.
+    In the figure example, we have data in a table. The data has several columns with features of the data. The same data is represented as gray dots on the bottom part of the figure. With this data, organized by an index *id*, a Merkle tree is calculated. Taking the root tree node, and including it in the blockchain assures us that the data cannot be modified.
     
     <center>
-        <img src="images/data.png" width="750">
+        <img src="images/data.png" width="700">
     </center>
 
 
 
-    The size of the tree is aproximately  log<sub>2</sub>(n) being *n* the number of rows on the table (the number of examples). it is important to notice that data does not hace to be in the blockchain, only its root node hash.
+    The size of the tree is approximately  log<sub>2</sub>(n) being *n* the number of rows on the table (the number of examples). it is important to notice that data does not have to be in the blockchain, only its root tree node hash. To avoid confusion in the explanation, let me explain the naming convention followed in this proposal: **tree node** is a node in  a Merkle tree; **cluster node** is a physical computer belonging to a cluster of computers; **node** is a entity in the blockchain-like paradigm which can interact with other similar entities, whether they are in the same cluster node or in another one.
+    
+    
 
-* **Node**: every process in a distributed process scheme, would become a node. Every interaction among these nodes is refered as a *message*. Let us focus on the distributed paradigm for machine learning most used currently, "MapReduce". In this pàradigm, a master cluster node acts as coordinator and deliver processes to worker nodes. These workers read the data, perform their computation (the map part) and write the results in a file. Another set of workers read this data and perform another computation that reduces the number of elements (the reduce part).  Finally they write the results in the disk.
+* **Node**: every process in a distributed process scheme, would become a node. Every interaction among these nodes is refereed as a *message*. Let us focus on the distributed paradigm most used currently, namely "MapReduce". In this paradigm, a master cluster node acts as coordinator and deliver processes to worker cluster nodes. These workers read the data, perform their computation (the map part) and write the results in files. Another set of workers read the data and perform another computation that reduces the number of computation elements (the reduce part). Finally they write the results into the disk.
 
 
     <center>
             <img src="images/mapreduce.png" width="750">
     </center>
     
-    Our approach to harden this paradigm against tampering is to wrap each process in a "bubble" that contains the process to be executed and additional parameters, like a hash of the current process parameters (a current state hash) and a hash of the previous parameters of the preocess (a las state hash). Let us call this wrapper as the *bubble machine*. This bubble are in fact nodes of the blockchain system, so every exchange of information among the "bubbles" are in fact similar to transactions in Bitcoin (here renamed to *messages*).
-
-
+    Our approach to harden this paradigm against tampering is to wrap each distributed process in a "bubble" that contains the same process to be executed next to additional parameters, like a hash of the current process parameters (current state) and a hash of the previous parameters of the process (last state). Let us call this wrapper a *bubble machine*. This bubbles creates in fact nodes of the blockchain-like system, so every exchange of information among the "bubbles" are similar to transactions in Bitcoin (here renamed to *messages*).
 
     <center>
             <img src="images/bubble.png" width="800">
     </center>
 
 
-    Let us see a node example. 
+    Let me show you an example of how a process becomes a node. 
 
     <center>
             <img src="images/process.png" width="600">
