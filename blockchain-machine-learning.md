@@ -46,14 +46,14 @@ In this proposal we are going to explore how a blockchain-like system could be a
     Our approach to harden this paradigm against tampering is to wrap each distributed process in a "bubble" that contains the same process to be executed next to additional parameters, like a hash of the current process parameters (current state) and a hash of the previous parameters of the process (last state). Let us call this wrapper a *bubble machine*. This bubbles creates in fact nodes of the blockchain-like system, so every exchange of information among the "bubbles" are similar to transactions in Bitcoin (here renamed to *messages*).
 
     <center>
-            <img src="images/bubble.png" width="800">
+            <img src="images/bubblemachine.png" width="800">
     </center>
 
 
     Let me show you an example of how a process becomes a node. 
 
     <center>
-            <img src="images/process.png" width="600">
+            <img src="images/bubble.png" width="600">
     </center>    
 
 
