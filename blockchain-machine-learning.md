@@ -34,9 +34,27 @@ In this proposal we are going to explore how a blockchain-like system could be a
 
     The size of the tree is aproximately  log<sub>2</sub>(n) being *n* the number of rows on the table (the number of examples). it is important to notice that data does not hace to be in the blockchain, only its root node hash.
 
-* **Node**: every process in a distributed process scheme, would become a node. Every interaction among these nodes is refered as a *message*. Let us focus on the distributed paradigm for machine learning most used currently, "MapReduce".
+* **Node**: every process in a distributed process scheme, would become a node. Every interaction among these nodes is refered as a *message*. Let us focus on the distributed paradigm for machine learning most used currently, "MapReduce". In this pàradigm, a master cluster node acts as coordinator and deliver processes to worker nodes. These workers read the data, perform their computation (the map part) and write the results in a file. Another set of workers read this data and perform another computation that reduces the number of elements (the reduce part).  Finally they write the results in the disk.
 
-   
+
+    <center>
+        ![alt text](images/mapreduce.svg "MapReduce concept")
+        MapReduce concept
+    </center>
+    
+    Our approach to harden this paradigm against tampering is to wrap each process in a "bubble" that contains the process to be executed, and additional parameters, like a hash of the current process parameters (a current state hash) and a hash of the previous parameters of the preocess (a las state hash). Let us call this wrapper as the *bubble machine*. This bubble are in fact nodes of the blockchain system, so every exchange of information among the "bubbles" are in fact similar to transactions in Bitcoin (here renamed to *messages*).
+
+
+
+    <center>
+        ![alt text](images/bubble.svg "The bubble machine wraps the processes")
+        The bubble machine wraps the processes
+    </center>
+
+
+    Let us see a node example. 
+    
+
 
 * Message
 
