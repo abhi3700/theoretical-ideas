@@ -41,7 +41,7 @@ In this proposal we are going to explore how a blockchain-like system could be a
             <img src="images/mapreduce.png" width="800">
     </center>
     
-    Our approach to harden this paradigm against tampering is to wrap each process in a "bubble" that contains the process to be executed, and additional parameters, like a hash of the current process parameters (a current state hash) and a hash of the previous parameters of the preocess (a las state hash). Let us call this wrapper as the *bubble machine*. This bubble are in fact nodes of the blockchain system, so every exchange of information among the "bubbles" are in fact similar to transactions in Bitcoin (here renamed to *messages*).
+    Our approach to harden this paradigm against tampering is to wrap each process in a "bubble" that contains the process to be executed and additional parameters, like a hash of the current process parameters (a current state hash) and a hash of the previous parameters of the preocess (a las state hash). Let us call this wrapper as the *bubble machine*. This bubble are in fact nodes of the blockchain system, so every exchange of information among the "bubbles" are in fact similar to transactions in Bitcoin (here renamed to *messages*).
 
 
 
