@@ -1,2 +1,2 @@
 # theoretical-ideas
-This repository contains ideas and proposals not yet implemented but which can be beneficial for the community.
+This repository contains ideas and proposals not implemented yet but which can be beneficial to the community
