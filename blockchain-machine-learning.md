@@ -90,7 +90,10 @@ This scheme presented can be applied to all the steps of processing of a machine
 
 A higher view of the scheme proposed gives us an intuition that the same scheme can be applied to any distributed process, whether a machine learning one or not. It may be interesting to apply this scheme to e.g. RAID systems, parallel processing etc.
 
-
+<p style="text-align: right;">
+        Santiago Morante, PhD <br>
+        Data Scientist
+</p>
 
 
     
